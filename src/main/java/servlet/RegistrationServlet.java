@@ -46,7 +46,6 @@ public class RegistrationServlet extends HttpServlet {
 		System.err.println("cpassword: " + cpassword);
 		System.err.println("city: " + city);
 		
-		RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
-		dispatcher.forward(request, response);
+		response.sendRedirect("/105");
 	}
 }
