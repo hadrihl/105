@@ -8,14 +8,14 @@ public class DBConnection {
 	
 	public static Connection getConnection() throws ClassNotFoundException, SQLException {
 		
-		String dbURL = "jdbc:mysql://localhost:3306/105?useSSL=false&serverTimezone=UTC";
+		String dbURL = "jdbc:mysql://localhost:3306/105";
 		String dbUser = "root";
-		String dbPassword = "password";
+		String dbPassword = "";
 		
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		Connection conn = DriverManager.getConnection(dbURL, dbUser, dbPassword);
-		System.out.println("Connected successfully.");
-		return conn;
-	}
+		Connection connection = DriverManager.getConnection(dbURL, dbUser, dbPassword);
+		System.err.println("Connected successfully.");
+		return connection;
 
+	}
 }

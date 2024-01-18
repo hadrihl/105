@@ -4,7 +4,6 @@ import java.io.IOException;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -22,6 +21,8 @@ public class RegistrationServlet extends HttpServlet {
 	public String firstname;
 	public String lastname;
 	public String email;
+	public String password;
+	public String city;
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 	throws ServletException, IOException {
@@ -45,6 +46,14 @@ public class RegistrationServlet extends HttpServlet {
 		System.err.println("password: " + password);
 		System.err.println("cpassword: " + cpassword);
 		System.err.println("city: " + city);
+		
+		user.setFirstname(firstname);
+		user.setLastname(lastname);
+		user.setEmail(email);
+		user.setPassword(cpassword);
+		user.setCity(city);
+		
+		UserDao.insert(user);
 		
 		response.sendRedirect("/105");
 	}
