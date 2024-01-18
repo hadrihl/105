@@ -48,5 +48,6 @@
 	</form>
 </div>
 
+<footer>hadrihl &copy; 2024. Made with love in Penang.</footer>
 </body>
 </html>

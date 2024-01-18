@@ -11,5 +11,7 @@
 	<p><a href="/105/registration">Register</a></p>
 	<p><a href="/105/hello">Hello</a></p>
 	<p><a href="/105/about">About</a></p>
+	
+	<footer>hadrihl &copy; 2024. Made with love in Penang.</footer>
 </body>
 </html>

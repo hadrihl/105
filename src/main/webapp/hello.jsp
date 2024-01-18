@@ -8,5 +8,7 @@
 </head>
 <body>
 	<h2>Hello, World! JSP page</h2>
+	
+	<footer>hadrihl &copy; 2024. Made with love in Penang.</footer>
 </body>
 </html>

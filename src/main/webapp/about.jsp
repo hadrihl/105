@@ -9,5 +9,7 @@
 <body>
 	<h2>About Us</h2>
 	<p>This is about us page.</p>
+	
+	<footer>hadrihl &copy; 2024. Made with love in Penang.</footer>
 </body>
 </html>
